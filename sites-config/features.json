@@ -1,35 +1,36 @@
 {
     "features": [
         {
-            "name": "Products",
+            "name": "locati",
             "templateType": "HBS",
             "entityPageSet": {
-                "htmlTemplate": "product",
-                "urlTemplate": "product_url"
+                "htmlTemplate": "location",
+                "urlTemplate": "location_url"
             },
-            "streamId": "products"
+            "streamId": "locationsv7"
         }
     ],
     "streams": [
         {
-            "$id": "products",
+            "$id": "locationsv7",
             "source": "knowledgeGraph",
             "destination": "pages",
             "fields": [
                 "id",
                 "uid",
                 "description",
-                "name"
+                "name",
+                "meta",
+                "hours"
             ],
-            "filter": {
-                "entityTypes": [
-                    "healthcareProfessional"
-                ]
-            },
             "localization": {
                 "locales": ["en"]
+            },
+            "filter": {
+                "entityTypes": [
+                    "location"
+                ]
             }
         }
-    ],
-    "templateVersion": 8
+    ]
 }
