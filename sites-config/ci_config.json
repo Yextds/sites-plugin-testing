@@ -18,7 +18,8 @@
                 "root": "pages",
                 "pattern": "*.hbs"
             } 
-        ]
+        ],
+		"plugins": "sites-plugins/pluginevents.json"
     },
     "base_image_tag": "node-12.18",
     "dependencies": {
