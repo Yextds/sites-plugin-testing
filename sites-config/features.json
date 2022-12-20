@@ -21,7 +21,8 @@
                 "description",
                 "name",
                 "meta",
-                "hours"
+                "hours",
+				"slug"
             ],
             "localization": {
                 "locales": ["en"]
