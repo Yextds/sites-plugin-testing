@@ -19,7 +19,19 @@
                 "pattern": "*.hbs"
             } 
         ],
-		"plugins": "sites-plugins/pluginevents.json"
+		"plugins": [
+			{
+				"pluginName": "updateEntity",
+				"sourceFiles": [
+				  {
+					"root": "sites-plugins/updateEntity",
+					"pattern": "*{.ts,.json}"
+				  }
+				],
+				"event": "ON_URL_CHANGE",
+				"functionName": "onEntityChanged"
+			}
+		]
     },
     "base_image_tag": "node-12.18",
     "dependencies": {
